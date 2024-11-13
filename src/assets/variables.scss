@@ -1,0 +1,41 @@
+$white: #ffffff;
+$black: #000000;
+
+%flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+%flex-wrap-space {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@font-face {
+	font-family: "Tiro";
+	src: url(../fonts/Tiro-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Metrika";
+	src: url(../fonts/Metrika.otf);
+}
+
+@font-face {
+	font-family: "Alegreya";
+	src: url(../fonts/Alegreya.ttf);
+}
+
+@font-face {
+	font-family: "Alegreya-Italic";
+	src: url(../fonts/Alegreya-Italic.ttf);
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url(../fonts/Montserrat.ttf);
+}
+
+$tablet-width: 768px;
+$desktop-width: 1440px;

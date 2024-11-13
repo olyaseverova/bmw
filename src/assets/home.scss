@@ -1,0 +1,247 @@
+header {
+    width: 100%;
+    background-color: white;
+    margin: 0 0 50px 0;
+
+    .header-inside {
+        width: 1200px;
+        margin: 0 auto 20px auto;
+        padding: 15px 0 0 0;
+    }
+
+    .headline {
+        display: block;
+        width: 1200px;
+        text-align: center;
+        margin: 0 0 0 0;
+        font-size: 45px;
+        font-family: "Montserrat", sans-serif;
+        color: #ae2828;
+        letter-spacing: 15px;
+    }
+
+    .under-headline {
+        color: #ae2828;
+        text-align: center;
+        margin: 0 auto 5px auto;
+        letter-spacing: 2px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .router {
+        color: black;
+        font-size: 25px;
+        transition: 0.2s ease;
+
+        &:hover {
+            color: red;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+
+    .pages-list {
+        z-index: 2;
+        padding: 0;
+        display: flex;
+        width: 1200px;
+        height: 35px;
+        margin: 0 auto;
+        justify-content: space-between;
+        background-color: grey;
+        border-radius: 25px;
+
+        .pages-list__item {
+            cursor: pointer;
+            width: 300px;
+            height: 35px;
+            text-align: center;
+            border-radius: 25px;
+
+            .router-link-active {
+                background-color: #ae2828;
+                border: 1px solid #ae2828;
+
+                &:hover {
+                    border: none;
+                }
+            }
+        }
+
+        .router {
+            display: block;
+            padding: 5px;
+            height: 35px;
+            width: 300px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            border-radius: 25px;
+
+            &:hover {
+                border: 1px solid white;
+            }
+
+            &:active,
+            &:focus {
+                color: gray;
+                outline: none;
+                border: 1px solid gray;
+                background-color: white;
+
+                .router {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.iframe {
+    display: block;
+    margin: 0 auto;
+    width: 990px;
+    height: 800px;
+
+    title {
+        display: none;
+    }
+}
+
+main {
+    .description {
+        width: 80%;
+        text-indent: 20px;
+        margin: 0 auto 30px auto;
+    }
+
+    .desc-big {
+        font-size: 30px;
+    }
+
+    .e-link {
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s ease;
+
+        &::after {
+            z-index: 1;
+            display: none;
+            position: absolute;
+            content: "";
+            width: 350px;
+            height: 190px;
+
+            top: -200px;
+            left: -150px;
+
+            background-size: 300px 154px;
+            background-repeat: no-repeat;
+            // background-color: white;
+            border-radius: 25px;
+            background-position: 50% 50%;
+        }
+
+        &:first-of-type::after {
+            background-image: url("../img/e28.png");
+        }
+
+        &:nth-of-type(2)::after {
+            background-size: 300px 129px;
+            background-image: url("../img/e30.png");
+        }
+
+        &:nth-of-type(3)::after {
+            background-size: 300px 143px;
+            background-image: url("../img/e32.png");
+        }
+
+        &:nth-of-type(4)::after {
+            background-size: 285px 176px;
+            background-image: url("../img/e34.png");
+        }
+
+        &:nth-of-type(5)::after {
+            background-size: 300px 148px;
+            background-image: url("../img/e36.png");
+        }
+
+        &:nth-of-type(6)::after {
+            background-size: 300px 170px;
+            background-image: url("../img/e38.png");
+        }
+
+        &:nth-of-type(7)::after {
+            background-size: 300px 135px;
+            background-image: url("../img/e39.png");
+        }
+
+        &:nth-of-type(8)::after {
+            background-size: 300px 147px;
+            background-image: url("../img/e60.png");
+        }
+
+        &:hover {
+            &::after {
+                display: block;
+            }
+        }
+    }
+
+    .bumer {
+        position: relative;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: 0.2s ease;
+        width: 300px;
+        height: 86px;
+
+        &::before {
+            opacity: 0;
+            position: absolute;
+            content: "";
+            width: 300px;
+            height: 86px;
+
+            transition: 0.2s ease;
+            transition-delay: 0s;
+
+            background-image: url("../img/бум1.png");
+            background-repeat: no-repeat;
+            background-size: 300px 86px;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+                transition-delay: 0.2;
+            }
+
+            .bumerclose {
+                opacity: 0;
+                transition-delay: 0.1s;
+            }
+        }
+    }
+
+    .bum-2 {
+        width: 300px !important;
+        height: 121px !important;
+
+        &::before {
+            width: 300px !important;
+            height: 121px !important;
+            background-size: 300px 121px !important;
+            background-image: url("../img/бум2.png") !important;
+        }
+    }
+
+    .big {
+        text-align: center;
+        font-size: 40px;
+        margin: 0 0 30px 0;
+    }
+}

@@ -1,0 +1,86 @@
+.contacts-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-iframe {
+    display: block;
+    width: 500px;
+    height: 400px;
+}
+
+.contacts-main__desc {
+    width: 650px;
+
+    p {
+        margin: 0 0 20px 0;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+
+        &:last-of-type {
+            margin: 0 0 100px 0;
+        }
+    }
+
+    .location-link {
+        color: black;
+        transition: 0.2s ease;
+        
+        &:hover,
+        &:focus {
+            color: #ae2828;
+            font-size: 19px;
+            font-weight: bold;
+            outline: none;
+        }
+        
+        &:active {
+            opacity: 0.5;
+        }
+    }
+    
+    .contacts-main__link {
+        color: black;
+        display: block;
+        text-align: center;
+        margin: 0 0 15px 0;
+        font-size: 25px;
+        transition: 0.2s ease;
+
+        &:hover,
+        &:focus {
+            font-size: 25px;
+            font-weight: bold;
+            outline: none;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+
+    .contact-tg:hover {
+        color: #0088cc;
+    }
+    .contact-wa:hover {
+        color: #25d366;
+    }
+    .contact-avito:hover {
+        .violet-avito {
+            color: #a53ff1;
+        }
+        .blue-avito {
+            color: #00a5ff;
+        }
+        .green-avito {
+            color: #01eb55;
+        }
+        .red-avito {
+            color: #ff0440;
+        }
+    }
+}
