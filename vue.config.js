@@ -1,1 +1,1 @@
-module.exports = { publicPath: '/bmw/' }
+module.exports = { publicPath: '/' }
