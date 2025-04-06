@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="basis-div">
     <header>
       <div class="header-inside">
         <h1 class="headline">Müller BMW Autoschrott</h1>
@@ -28,14 +28,14 @@
 
     <main>
       <iframe class="iframe"
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSFtQ6Ytc3gbChR6Mf_UXYeCPdZKlc3vtN5Lse6UV3d43h9Jd9LnG89AP96lUqSxA/pubhtml?gid=1682800448&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRBslRgBP61tmEvA1femOE5pdgCsaHEzUgr5v7aLlBiYycLrcTnPtxmCIiafn2WIA/pubhtml?gid=2086774227&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
     </main>
 
     <footer>
       <div class="footer-inside">
         <ul class="contacts-list list">
           <li class="contacts-list__item" v-for="contact in contacts" :key="contact.id">
-            <a class="contact-link" :href="contact.href"  :class="contact.name">
+            <a class="contact-link" :href="contact.href" :class="contact.name">
               <span>
                 {{ contact.name }}
               </span>

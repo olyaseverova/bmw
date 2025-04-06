@@ -1,5 +1,5 @@
 <template>
-  <div class="vikup">
+  <div class="basis-div">
     <header>
       <div class="header-inside">
         <h1 class="headline">Müller BMW Autoschrott</h1>

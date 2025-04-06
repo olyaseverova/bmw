@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
     min-width: 373px;
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     background-color: white;
     scroll-behavior: smooth;
     font-family: "Montserrat", sans-serif;
@@ -20,14 +20,189 @@ body {
     }
 }
 
+.basis-div {
+    width: 373px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+        width: 768px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 1440px;
+    }
+}
+
+header {
+    width: 370px;
+    margin: 0 auto 20px auto;
+    background-color: white;
+
+    @media (min-width: $desktop-width) {
+        width: 1440px;
+        margin: 0 0 50px 0;
+    }
+
+    .header-inside {
+        width: 360px;
+        margin: 0 auto 20px auto;
+        padding: 5px 0 0 0;
+
+        @media (min-width: $desktop-width) {
+            width: 1200px;
+            padding: 15px 0 0 0;
+        }
+    }
+
+    .headline {
+        display: block;
+        width: 360px;
+        text-align: center;
+        margin: 0 0 10px 0;
+        font-size: 37px;
+        font-family: "Montserrat", sans-serif;
+        color: #ae2828;
+        letter-spacing: 5px;
+
+        @media (min-width: $desktop-width) {
+            width: 1200px;
+            font-size: 45px;
+            margin: 0;
+            letter-spacing: 15px;
+        }
+    }
+
+    .under-headline {
+        color: #ae2828;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+
+        @media (min-width: $desktop-width) {
+            font-size: 25px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .router {
+        color: black;
+        font-size: 20px;
+
+        @media (min-width: $desktop-width) {
+            font-size: 25px;
+        }
+
+        &:hover {
+            color: red;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+
+    .pages-list {
+        z-index: 2;
+        padding: 0;
+        display: flex;
+        width: 368px;
+        height: 25px;
+        margin: 0 auto;
+        background-color: grey;
+        border-radius: 25px;
+
+        @media (min-width: $desktop-width) {
+            width: 1200px;
+            height: 35px;
+            justify-content: space-between;
+        }
+
+        .pages-list__item {
+            cursor: pointer;
+            width: 92px;
+            height: 25px;
+            text-align: center;
+            border-radius: 25px;
+
+            @media (min-width: $desktop-width) {
+                width: 300px;
+            }
+
+            .router-link-active {
+                background-color: #ae2828;
+                border: 1px solid #ae2828;
+
+                &:hover {
+                    border: 1px solid #ae2828;
+                }
+            }
+        }
+
+        .router {
+            display: block;
+            padding: 6px;
+            height: 25px;
+            width: 92px;
+            font-size: 10px;
+            text-decoration: none;
+            color: white;
+            border-radius: 25px;
+
+            @media (min-width: $desktop-width) {
+                width: 300px;
+                height: 35px;
+                padding: 5px;
+                font-size: 20px;
+            }
+
+            &:hover {
+                border: 1px solid white;
+            }
+
+            &:active,
+            &:focus {
+                color: gray;
+                outline: none;
+                border: 1px solid gray;
+                background-color: white;
+
+                .router {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+main {
+    width: 370px;
+    margin: 0 auto 20px auto;
+
+    @media (min-width: $desktop-width) {
+        width: 1200px;
+        margin: 0 auto 100px auto;
+    }
+}
+
 footer {
-    width: 1200px;
+    width: 350px;
     margin: 0 auto;
     padding: 20px 0;
     border-top: 3px solid black;
 
+    @media (min-width: $desktop-width) {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
     .contacts-list {
-        margin: 0 auto 20px auto;
+        margin: 0 auto 10px auto;
+
+        @media (min-width: $desktop-width) {
+            margin: 0 auto 20px auto;
+        }
     }
 
     .time {
@@ -56,18 +231,27 @@ footer {
 .contacts {
     display: flex;
     justify-content: space-between;
-    width: 320px;
-    margin: 5px auto 0 auto;
+    width: 300px;
+    margin: 0 auto;
     font-size: 15px;
+
+    @media (min-width: $desktop-width) {
+        width: 320px;
+    }
 
     .number {
         text-decoration: none;
         color: black;
-        font-size: 23px;
+        font-size: 22px;
         font-weight: 500;
-        padding: 2px 0 0 0;
+        padding: 4px 0 0 0;
         margin: 0 20px 0 0;
         transition: 0.2s ease;
+
+        @media (min-width: $desktop-width) {
+            font-size: 23px;
+            padding: 2px 0 0 0;
+        }
 
         &:hover {
             opacity: 0.7;

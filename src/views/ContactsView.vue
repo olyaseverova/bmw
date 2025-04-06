@@ -1,5 +1,5 @@
 <template>
-    <div class="vikup">
+    <div class="basis-div">
         <header>
             <div class="header-inside">
                 <h1 class="headline">Müller BMW Autoschrott</h1>
@@ -35,10 +35,10 @@
             <div class="contacts-main__desc">
                 <p>Мы находимся в <a class="location-link" target="_blank"
                         href="https://yandex.ru/maps/?ol=geo&text=%D1%81%D0%B5%D0%BB%D0%BE%20%D0%90%D0%B1%D1%80%D0%B0%D0%BC%D1%86%D0%B5%D0%B2%D0%BE&sll=37.965939%2C56.212835&sspn=0.036581%2C0.040325&si=ykye0jrqvqhcnam40t810pcwaw">
-                        Московской Области, Сергиево-Посадский район, посёлок Абрамцево</a></p>
-                <p>Возможна бесплатная доставка малогабаритных запчастей в район Ярославского шоссе, Проспекта Мира, ВДНХ
+                        Московской Области, Сергиево-Посадский район, посёлок Абрамцево.</a></p>
+                <p>Возможна бесплатная доставка малогабаритных запчастей в район Ярославского шоссе, Проспекта Мира, ВДНХ.
                 </p>
-                <p>Отправка в Ваш город СДЭКОМ или другой ТК</p>
+                <p>Отправка в Ваш город СДЭКОМ или другой ТК.</p>
                 <a class="contacts-main__link contact-avito"
                     href="https://www.avito.ru/brands/4f2f85d7425518bd0a99170ba967f99f?src=sharing" target="_blank">
                     <span class="violet-avito">Müller</span><span class="blue-avito"> BMW</span><span class="green-avito">

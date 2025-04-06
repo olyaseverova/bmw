@@ -1,31 +1,59 @@
 .contacts-main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (min-width: $desktop-width) {
+        flex-wrap: nowrap;
+    }
 }
 
 .contacts-iframe {
     display: block;
-    width: 500px;
-    height: 400px;
+    width: 365px;
+    height: 365px;
+    margin: 0 auto;
+
+    @media (min-width: $desktop-width) {
+        width: 500px;
+        height: 400px;
+    }
 }
 
 .contacts-main__desc {
-    width: 650px;
+    width: 365px;
+    order: -1;
+    margin: 0 0 30px 0;
+
+    @media (min-width: $desktop-width) {
+        width: 650px;
+        order: 1;
+        margin: 0;
+    }
 
     p {
-        margin: 0 0 20px 0;
-        font-size: 20px;
+        text-align: center;
+        margin: 0 0 10px 0;
         font-family: "Montserrat", sans-serif;
-
+        
+        @media (min-width: $desktop-width) {
+            text-align: left;
+            margin: 0 0 20px 0;
+        }
+        
         &:last-of-type {
-            margin: 0 0 100px 0;
+            margin: 0 0 20px 0;
+
+            @media (min-width: $desktop-width) {
+                margin: 0 0 100px 0;
+            }
         }
     }
 
     .location-link {
         color: black;
         transition: 0.2s ease;
-        
+
         &:hover,
         &:focus {
             color: #ae2828;
@@ -33,19 +61,23 @@
             font-weight: bold;
             outline: none;
         }
-        
+
         &:active {
             opacity: 0.5;
         }
     }
-    
+
     .contacts-main__link {
         color: black;
         display: block;
         text-align: center;
         margin: 0 0 15px 0;
-        font-size: 25px;
+        font-size: 20px;
         transition: 0.2s ease;
+        
+        @media (min-width: $desktop-width) {
+            font-size: 25px;
+        }
 
         &:hover,
         &:focus {
