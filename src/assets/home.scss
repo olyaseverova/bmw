@@ -4,6 +4,11 @@
     width: 370px;
     height: 500px;
     
+    @media (min-width: $tablet-width) {
+        width: 100%;
+        max-width: 953px;
+    }
+
     @media (min-width: $desktop-width) {
         width: 990px;
         height: 800px;
