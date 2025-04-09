@@ -32,6 +32,7 @@
       </p>
       <p class="description justify">
         Выкупим <b>BMW
+          <button type="button" class="e-button">e28</button>
           <a class="e-link">e28</a> <a class="e-link">e30</a> <a class="e-link">e32</a> <a class="e-link">e34</a> <a
             class="e-link">e36</a> <a class="e-link">e38</a> <a class="e-link">e39</a> <a class="e-link">e60</a>
         </b> в любом состоянии, в том числе целые, исправные, на ходу, а также битые,

@@ -23,6 +23,48 @@ main {
         }
     }
 
+    .e-button {
+        position: relative;
+
+        &::after {
+            z-index: 1;
+            display: none;
+            position: absolute;
+            content: "";
+            width: 350px;
+            height: 300px;
+
+            top: -300px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            
+            background-size: 300px 150px;
+            background-repeat: no-repeat;
+            background-color: #ae2828;
+            border-radius: 50%;
+            border: 5px solid white;
+            background-position: 50% 50%;
+            
+            @media (min-width: $desktop-width) {
+                width: 350px;
+                height: 300px;
+                top: -305px;
+                left: -165px;
+                background-size: 300px 150px;
+            }
+        }
+
+        &:first-of-type::after {
+            background-image: url("../img/e28done.png");
+        }
+
+        &:focus, &:hover {
+            &::after {
+                display: block;
+            }
+        }
+    }
+
     .e-link {
         cursor: pointer;
         transition: 0.2s ease;
