@@ -40,8 +40,6 @@
         <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e38</button>
         <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e39</button>
         <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e60</button>
-        <!-- <a class="e-link">e28</a> <a class="e-link">e30</a> <a class="e-link">e32</a> <a class="e-link">e34</a> <a
-            class="e-link">e36</a> <a class="e-link">e38</a> <a class="e-link">e39</a> <a class="e-link">e60</a> -->
         в любом состоянии, в том числе целые, исправные, на ходу, а также битые,
         разукомплектованные, разобранные, нерастаможенные, с запретом регистрации, арестованные, армянские, грузинские,
         белорусские, литовские, украинские, любые другие иностранные, без документов. Кроме криминала. Заберем своим
