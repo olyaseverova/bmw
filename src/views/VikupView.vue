@@ -31,17 +31,24 @@
         Наше реставрационное ателье специализируется на восстановлении старых автомобилей BMW и продаже запчастей к ним.
       </p>
       <p class="description justify">
-        Выкупим <b>BMW
-          <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e28</button>
-          <img class="e28-img none" src="@/img/бум1ж.png" width="300" height="86" alt="Бумер 1" />
-          <!-- <a class="e-link">e28</a> <a class="e-link">e30</a> <a class="e-link">e32</a> <a class="e-link">e34</a> <a
+        Выкупим <b>BMW</b>
+        <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e28</button>
+        <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e30</button>
+        <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e32</button>
+        <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e34</button>
+        <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e36</button>
+        <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e38</button>
+        <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e39</button>
+        <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e60</button>
+        <!-- <a class="e-link">e28</a> <a class="e-link">e30</a> <a class="e-link">e32</a> <a class="e-link">e34</a> <a
             class="e-link">e36</a> <a class="e-link">e38</a> <a class="e-link">e39</a> <a class="e-link">e60</a> -->
-        </b> в любом состоянии, в том числе целые, исправные, на ходу, а также битые,
+        в любом состоянии, в том числе целые, исправные, на ходу, а также битые,
         разукомплектованные, разобранные, нерастаможенные, с запретом регистрации, арестованные, армянские, грузинские,
         белорусские, литовские, украинские, любые другие иностранные, без документов. Кроме криминала. Заберем своим
         эвакуатором максимально быстро, по возможности в день обращения. Заплатим по рыночной стоимости. Возьмем на себя
         хлопоты с оформлением. Мы выезжаем по всей Москве и Московской области, а также в прилегающих областях в радиусе
-        500км от Москвы. В отдельных случаях выезжаем по всей России.</p>
+        500км от Москвы. В отдельных случаях выезжаем по всей России.
+      </p>
 
       <!-- <h1 class="big">8 (925) 289-03-28</h1> -->
 
@@ -124,24 +131,25 @@ export default {
   },
 
   methods: {
-    onTapItem() { // you can remove the `mouseEvent` argument
-      console.log("Tapped!");
-      let eimgs = document.querySelectorAll(".e28-img");
-      // eimg.classList.toggle("none")
+    onTapItem(event) { // you can remove the `mouseEvent` argument
+      event.target.classList.add("e-button-pop");
+      // console.log("Tapped!");
+      // let eimgs = document.querySelectorAll(".e-img");
 
-      eimgs.forEach(function (eimg) {
-        eimg.classList.remove("none")
-      });
+      // eimgs.forEach(function (eimg) {
+      //   eimg.classList.remove("none")
+      // });
     },
-    offTapItem() { // you can remove the `mouseEvent` argument
-      console.log("offf!");
+    offTapItem(event) { // you can remove the `mouseEvent` argument
+      event.target.classList.remove("e-button-pop");
+      // console.log("offf!");
 
-      let eimgs = document.querySelectorAll(".e28-img");
+      // let eimgs = document.querySelectorAll(".e-img");
       // eimg.classList.toggle("none")
 
-      eimgs.forEach(function (eimg) {
-        eimg.classList.add("none")
-      });
+      // eimgs.forEach(function (eimg) {
+      //   eimg.classList.add("none")
+      // });
     },
   }
 }
