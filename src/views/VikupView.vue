@@ -32,9 +32,10 @@
       </p>
       <p class="description justify">
         Выкупим <b>BMW
-          <button type="button" class="e-button">e28</button>
-          <a class="e-link">e28</a> <a class="e-link">e30</a> <a class="e-link">e32</a> <a class="e-link">e34</a> <a
-            class="e-link">e36</a> <a class="e-link">e38</a> <a class="e-link">e39</a> <a class="e-link">e60</a>
+          <button type="button" class="e-button" v-on:touchstart="onTapItem" v-on:touchend="offTapItem">e28</button>
+          <img class="e28-img none" src="@/img/бум1ж.png" width="300" height="86" alt="Бумер 1" />
+          <!-- <a class="e-link">e28</a> <a class="e-link">e30</a> <a class="e-link">e32</a> <a class="e-link">e34</a> <a
+            class="e-link">e36</a> <a class="e-link">e38</a> <a class="e-link">e39</a> <a class="e-link">e60</a> -->
         </b> в любом состоянии, в том числе целые, исправные, на ходу, а также битые,
         разукомплектованные, разобранные, нерастаможенные, с запретом регистрации, арестованные, армянские, грузинские,
         белорусские, литовские, украинские, любые другие иностранные, без документов. Кроме криминала. Заберем своим
@@ -82,6 +83,7 @@
   </div>
 </template>
 
+
 <script>
 
 export default {
@@ -119,6 +121,28 @@ export default {
         },
       ],
     }
+  },
+
+  methods: {
+    onTapItem() { // you can remove the `mouseEvent` argument
+      console.log("Tapped!");
+      let eimgs = document.querySelectorAll(".e28-img");
+      // eimg.classList.toggle("none")
+
+      eimgs.forEach(function (eimg) {
+        eimg.classList.remove("none")
+      });
+    },
+    offTapItem() { // you can remove the `mouseEvent` argument
+      console.log("offf!");
+
+      let eimgs = document.querySelectorAll(".e28-img");
+      // eimg.classList.toggle("none")
+
+      eimgs.forEach(function (eimg) {
+        eimg.classList.add("none")
+      });
+    },
   }
 }
 </script>
