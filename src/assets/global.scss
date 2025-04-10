@@ -141,7 +141,7 @@ header {
             width: 760px;
             height: 30px;
         }
-        
+
         @media (min-width: $desktop-width) {
             width: 1200px;
             height: 35px;
@@ -322,10 +322,6 @@ footer {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-
-    span {
-        display: none;
-    }
 
     .contact-link {
         display: block;

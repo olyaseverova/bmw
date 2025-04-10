@@ -6,14 +6,10 @@
         <h2 class="under-headline">ЗАПЧАСТИ НОВЫЕ И Б/У С НЕМЕЦКИХ РАЗБОРОК</h2>
 
         <div class="contacts">
-          <a class="number" href="tel:+79772805434">8 (977) 280-54-34</a>
+          <a class="number" href="tel:+79252890328">8 (925) 289-03-28</a>
           <ul class="contacts-list list">
             <li class="contacts-list__item" v-for="contact in contacts" :key="contact.id">
-              <a class="contact-link" :href="contact.href" target="_blank" :class="contact.name">
-                <span>
-                  {{ contact.name }}
-                </span>
-              </a>
+              <a class="contact-link" :href="contact.href" target="_blank" :class="contact.name"></a>
             </li>
           </ul>
         </div>
@@ -48,8 +44,6 @@
         500км от Москвы. В отдельных случаях выезжаем по всей России.
       </p>
 
-      <!-- <h1 class="big">8 (925) 289-03-28</h1> -->
-
       <div class="bumer">
         <img class="bumerclose" src="@/img/бум1ж.png" width="300" height="86" alt="Бумер 1" />
       </div>
@@ -74,11 +68,7 @@
       <div class="footer-inside">
         <ul class="contacts-list list">
           <li class="contacts-list__item" v-for="contact in contacts" :key="contact.id">
-            <a class="contact-link" :href="contact.href" :class="contact.name">
-              <span>
-                {{ contact.name }}
-              </span>
-            </a>
+            <a class="contact-link" :href="contact.href" :class="contact.name" target="_blank"></a>
           </li>
         </ul>
         <p class="time">Пишите круглосуточно, звоните с 11 до 24 ч</p>
@@ -99,11 +89,11 @@ export default {
       contacts: [
         {
           name: "Telegram",
-          href: "https://t.me/mullerbmw"
+          href: "https://t.me/Egorov_Peter"
         },
         {
           name: "WhatsApp",
-          href: "https://wa.me/79772805434"
+          href: "https://wa.me/79252890328"
         },
       ],
 

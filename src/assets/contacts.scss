@@ -15,11 +15,29 @@
     }
 }
 
+.contacts-map {
+    width: 365px;
+    height: 365px;
+
+    background-size: 100% 100%;
+    background-image: url("../img/map-mob-tab.png");
+
+    @media (min-width: $tablet-width) {
+        width: 350px;
+        height: 350px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 500px;
+        height: 400px;
+        background-image: url("../img/map-desc.png");
+    }
+}
+
 .contacts-iframe {
     display: block;
     width: 365px;
     height: 365px;
-    margin: 0 auto;
 
     @media (min-width: $tablet-width) {
         width: 350px;
@@ -52,12 +70,12 @@
         text-align: center;
         margin: 0 0 10px 0;
         font-family: "Montserrat", sans-serif;
-        
+
         @media (min-width: $desktop-width) {
             text-align: left;
             margin: 0 0 20px 0;
         }
-        
+
         &:last-of-type {
             margin: 0 0 20px 0;
 
@@ -95,7 +113,7 @@
         @media (min-width: $tablet-width) {
             font-size: 18px;
         }
-        
+
         @media (min-width: $desktop-width) {
             font-size: 25px;
         }
